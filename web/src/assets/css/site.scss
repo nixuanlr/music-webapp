@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+*:focus, button, input, textarea, select {
+    outline: none;
+}
+
+body {
+    color: $color_text_default;
+    word-break: break-all;
+    word-wrap: break-word;
+    //font-family: '微软雅黑';
+    font-family:'Microsoft YaHei','SimSun','Arial', sans-serif;
+    background: $color_background;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+li {
+  list-style: none;
+}
+
+button, select, label, a {
+  cursor: pointer;
+}
+
+a {
+  color: $color_text_default;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a.default {
+  cursor: default;
+}
+
+a.hot {
+  color: $color_theme;
+}
+
+ ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: #eee;
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #ccc;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+h1, h2, h3, h4, h5, strong, b, th {
+    font-weight: normal;
+}
+
+em, i {font-style: normal;}
+
+textarea {
+    resize: none;
+}
+
+.l{float:left;}
+.r{float:right;}
+.ver-align-mid {vertical-align: middle;}
+.tc {text-align: center}
+.clear{height:0;overflow:hidden;font-size:0;clear:both;}
+.clearfix{zoom:1;}
+.clearfix:after{height:0;visibility:hidden;display:block;clear:both;content:"";}
+
+.mt20 {
+  margin-top: 20px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+
+.center_topleft { // 居中
+  position: absolute;top: 50%;left: 50%;
+  transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);}
+
+.center_top { // 上下居中
+  position: absolute;top: 50%;
+  transform: translateY(-50%);-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);}
+
+.center_left { // 左右居中
+  position: absolute;left: 50%;
+  transform: translateX(-50%);-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);}
