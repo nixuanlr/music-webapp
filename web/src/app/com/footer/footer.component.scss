@@ -1,0 +1,12 @@
+@import '../../../assets/css/color';
+@import '../../../assets/css/font';
+
+footer {
+    height : 30px;
+    flex : 1;
+    text-align : center;
+    background-color : $color_theme;
+    .copyright {
+        font-size: $font_h4;
+    }
+}

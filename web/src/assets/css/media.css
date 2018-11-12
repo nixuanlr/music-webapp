@@ -2,39 +2,23 @@
  * 报告
  */
 @media (max-width: 1920px) {
-  .report {width: 1100px;}
-  .report .reportnavigation {
-    right: 160px !important;
-  }
-  .unite-navigation {right: 145px;}
+ 
 }
 
 @media (max-width: 1820px) {
-  .report .reportnavigation {right: 60px !important;}
-  .unite-navigation {right: 90px;}
+  
 }
 
 @media (max-width: 1680px) {
-  .report .reportnavigation {
-    right: 20px !important;
-  }
-  .unite-navigation {right: 10px;}
 
 }
 
 @media (max-width: 1440px) {
-  .report .reportnavigation {
-    right: 10px !important;
-  }
-  .unite-navigation {right: 0px;}
+  
 }
 
 @media (max-width: 1366px) {
-  .report {width: 980px;}
-  .report .reportnavigation {
-    right: 0 !important;
-  }
-  .unite-navigation {right: 0px;}
+
 }
 
 @media (max-width: 1280px) {
