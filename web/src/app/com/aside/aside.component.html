@@ -3,7 +3,9 @@
     <div *ngfor="let menu of menus">
         <h5>{{menu.name}}</h5>
         <ul>
-    
+          <li *ngfor="let subMenu of menu.children ">
+            <a [herf]='subMenu.herf'>{{subMenu.name}}</a>
+          </li>
         </ul>  
     </div>
   </div>

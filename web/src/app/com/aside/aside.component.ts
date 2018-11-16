@@ -38,6 +38,7 @@ export class MenuItem {
   name?: string;
   herf: string;
   params: Object;
+  children?: MenuItem[];
 
   constructor(id?: number, name?: string , herf?: string, params?: Object, pId?: number) {
     this.id = id;
