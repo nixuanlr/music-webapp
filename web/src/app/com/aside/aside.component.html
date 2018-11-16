@@ -1,12 +1,12 @@
 <aside>
   <div>
-    <div *ngfor="let menu of menus">
+    <div *ngFor="let menu of menus ">
         <h5>{{menu.name}}</h5>
         <ul>
-          <li *ngfor="let subMenu of menu.children ">
-            <a [herf]='subMenu.herf'>{{subMenu.name}}</a>
+          <li *ngFor="let subMenu of menu.children ">
+            <a [href]='subMenu.herf'>{{subMenu.name}}</a>
           </li>
-        </ul>  
+        </ul>
     </div>
   </div>
 </aside>
