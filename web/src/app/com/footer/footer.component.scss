@@ -3,10 +3,14 @@
 
 footer {
     height : 30px;
-    flex : 1;
     text-align : center;
     background-color : $color_theme;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     .copyright {
         font-size: $font_h4;
+        line-height: 30px;
     }
 }

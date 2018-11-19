@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port=1993",
+    "start": "ng serve --port=1993 --serve-path=ng-music --open",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

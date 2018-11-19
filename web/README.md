@@ -4,7 +4,7 @@ music
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:1993/music/main/index`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:1993/ng-music/main/index`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
