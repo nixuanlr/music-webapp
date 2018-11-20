@@ -3,26 +3,49 @@
 @import "../../../assets/css/font";
 
 aside {
+    position: absolute;
+    top:64px;
+    left: 0;
     width: 200px;
     height: 100%;
-    display: flex;
+    // display: flex;
     font-size: $font_h4;
-    background-color: efefef;
-    h5 {
-        color: $color_text_ligntt;
-        margin: 0 0 0 10px; 
-    }
-    ul {
-    //  margin-left: 20px;
-     width: 100%;
-     li {
-        height: 30px;
-        line-height: 1;
-        box-sizing: border-box;
-        &.active{
-            border-left: 2px solid #ff0000
+    background-color: #efefef;
+    .menu-container{
+        width: 100%;
+        h5 {
+            color: $color_text_ligntt;
+            margin: 0 0 0 10px; 
+            line-height: 30px;
+            height: 30px;
         }
-     }
+        ul {
+          width: 100%;
+             li {
+                height: 30px;
+                line-height: 30px;
+                box-sizing: border-box;
+                cursor: pointer;
+                &.active{
+                    border-left: 2px solid #ff0000;
+                    background-color: #e4dfdf;
+                }
+                a,i {
+                    display: inline-block;
+                    float: left;
+                }
+                i{
+                    width: 16px;
+                    height: 16px;
+                    margin: 7px 20px;
+                    background-color:#efefef;
+                }
+                span {
+                    line-height: 30px;
+                }
+            }
+        }
     }
+    
 
 }

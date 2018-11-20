@@ -35,9 +35,12 @@ export class AsideComponent implements OnInit {
     return menus;
   }
    //
-   go2(subMenu: MenuItem) {
+   go2(subMenu: MenuItem, pMenu: MenuItem) {
+     pMenu.children.forEach( sub => {
+        sub.isActive = false;
+     });
     subMenu.isActive = !subMenu.isActive;
-    window.location.href = subMenu.herf;
+    // window.location.href = subMenu.herf;
   }
 }
 
