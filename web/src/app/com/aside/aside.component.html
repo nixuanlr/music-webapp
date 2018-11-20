@@ -3,8 +3,8 @@
     <div *ngFor="let menu of menus ">
         <h5>{{menu.name}}</h5>
         <ul>
-          <li *ngFor="let subMenu of menu.children ">
-            <a [href]='subMenu.herf'>{{subMenu.name}}</a>
+          <li *ngFor="let subMenu of menu.children " [class.active]='subMenu.isActive'>
+            <a (click)='go2(subMenu)'>{{subMenu.name}}</a>
           </li>
         </ul>
     </div>

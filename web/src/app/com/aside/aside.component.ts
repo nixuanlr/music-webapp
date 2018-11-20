@@ -18,7 +18,7 @@ export class AsideComponent implements OnInit {
     let menus = [];
     //
     menus.push(new MenuItem(0, '推荐', '' , [
-      new MenuItem(1, '发现音乐', 'main/find', null, false, {}, 0),
+      new MenuItem(1, '发现音乐', 'main/find', null, true, {}, 0),
       new MenuItem(2, '私人MF', 'main/MF', null, false, {}, 0),
       new MenuItem(3, '视频', 'main/video', null, false, {}, 0),
       new MenuItem(4, '朋友', 'main/friend', null, false, {}, 0),
@@ -33,6 +33,11 @@ export class AsideComponent implements OnInit {
     menus.push(new MenuItem(200, '我的歌单'));
     //
     return menus;
+  }
+   //
+   go2(subMenu: MenuItem) {
+    subMenu.isActive = !subMenu.isActive;
+    window.location.href = subMenu.herf;
   }
 }
 
