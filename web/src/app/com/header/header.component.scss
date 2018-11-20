@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@import "../../../assets/css/color";
+@import "../../../assets/css/font";
+
+header{
+    height: 64px;
+    width: 100%;
+    background: $color_theme;
+}

@@ -1,3 +1,8 @@
-<p>
-  find-music works!
-</p>
+<div>
+  
+</div>
+<div>
+  <div *ngIf="recommend">
+    <img [src]="slider.picUrl" *ngFor="let slider of recommend.slider">
+  </div>
+</div>
