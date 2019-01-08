@@ -5,9 +5,10 @@ import { IndexComponent } from './index/index.component';
 import { FindMusicComponent } from './find-music/find-music.component';
 import { IndexRoutingModule } from './index-routing.module';
 import { PlayerComponent } from './components/player/player.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
-  declarations: [IndexComponent, FindMusicComponent, PlayerComponent],
+  declarations: [IndexComponent, FindMusicComponent, PlayerComponent, SliderComponent],
   imports: [
     CommonModule,
     ComModule,

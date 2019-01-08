@@ -1,8 +1,13 @@
-<div>
+<main>
+  <div>
   
-</div>
-<div>
-  <div *ngIf="recommend">
-    <img [src]="slider.picUrl" *ngFor="let slider of recommend.slider">
   </div>
-</div>
+  <div class="carousel">
+    <div *ngIf="recommend">
+      <img [src]="slider.picUrl" *ngFor="let slider of recommend.slider">
+    </div>
+  </div>
+  <div>
+
+  </div>
+</main>
